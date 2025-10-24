@@ -1,5 +1,7 @@
+@import "tailwindcss";
+
 #root {
-  background-color: #191b1f;
+  background: linear-gradient(180deg, #373e44 -100%, #191b1f 100%);
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -16,5 +18,25 @@
     column-gap: 2.2rem;
     padding-left: 15px;
     padding-right: 2.5rem;
+  }
+}
+
+@layer components {
+  .widget {
+    @apply w-full h-[47%] bg-[#363C43] rounded-[19px] shadow-[5.67px_5.67px_3.78px_rgba(0,0,0,0.4)];
+  }
+
+  .widget-separator {
+    @apply w-[85%] h-1 rounded-[2.5px] shadow-[0_4px_4px_rgba(0,0,0,0.33)] backdrop-blur-[4.9px];
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.05),
+        rgba(255, 255, 255, 0.05)
+      ),
+      linear-gradient(
+        180deg,
+        rgba(40, 40, 40, 0.1) 0%,
+        rgba(248, 248, 248, 0.1) 100%
+      );
   }
 }
