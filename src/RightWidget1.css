@@ -2,40 +2,67 @@
 
 @layer components {
   .tabs-container {
-    @apply bg-[#171717] shadow-[inset_0px_4.96001px_12.4px_2.48px_rgba(0,0,0,0.25)] flex gap-[5px] rounded-[1.1rem] w-[88%] lg:mx-auto md:ml-6 p-[5px]  md:text-[9px] lg:text-[0.8rem] xl:text-[1rem] text-[#A3ADB2];
-  }
-
-  .active-tab {
-    @apply bg-[#28292F] shadow-[-8.43333px_-16.8667px_50.6px_-16.8667px_#485B71,13.4933px_16.8667px_67.4667px_8.43333px_#0A0A0A] text-white hover:cursor-default;
+    @apply bg-[#171717]
+    shadow-[inset_0px_4.96001px_12.4px_2.48px_rgba(0,0,0,0.25)]
+    flex gap-[5px] rounded-[1.1rem] w-[88%] lg:mx-auto md:ml-6 p-[5px]
+    md:text-[9px] lg:text-[0.8rem] xl:text-[1rem] text-[#A3ADB2]
+    relative;
   }
 
   .tab {
-    @apply text-center py-1.5  rounded-2xl w-1/3 relative overflow-hidden cursor-pointer;
+    @apply text-center py-1.5 rounded-2xl w-1/3 relative overflow-hidden cursor-pointer;
+  }
+
+  .active-tab {
+    @apply text-white hover:cursor-default;
+    position: relative;
+    z-index: 2;
+    transition: color 450ms ease-in-out;
   }
 }
 
-.tabs-container .tab::after {
+/*Sliding Background Indicator */
+.active-indicator {
+  position: absolute;
+  top: 5px;
+  left: 7px;
+  width: calc(33.333% - 5px);
+  height: calc(100% - 10px);
+  border-radius: 1rem;
+  background: #28292f;
+  box-shadow: -8.43px -16.86px 50.6px -16.86px #485b71,
+    13.49px 16.86px 67.46px 8.43px #0a0a0a;
+  transition: transform 400ms ease-in-out;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* applies the hover effect only when tab does not have active-tab class */
+.tabs-container .tab:not(.active-tab)::after {
   content: "";
   position: absolute;
-  left: -175px;
+  /* left: -100%; */
+  left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   padding: 6px 0;
   border-radius: 16px;
-  background-color: #28292f81;
-  transition: left 300ms ease-out;
+  background: linear-gradient(90.05deg, #191919 -28.14%, #1e2123 99.96%);
+  transform: translateX(-100%);
+  transition: all 300ms ease-in-out;
+  z-index: 2;
 }
 
 .tabs-container .tab:hover::after {
-  left: 0;
+  /* left: 0; */
+  transform: translateX(0);
 }
 
 .tabs-container .tab span {
   position: relative;
   z-index: 10;
   display: block;
-  border: inherit;
   width: 100%;
   height: 100%;
 }
