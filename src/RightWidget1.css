@@ -4,13 +4,13 @@
   .tabs-container {
     @apply bg-[#171717]
     shadow-[inset_0px_4.96001px_12.4px_2.48px_rgba(0,0,0,0.25)]
-    flex gap-[5px] rounded-[1.1rem] w-[88%] lg:mx-auto md:ml-6 p-[5px]
+    flex gap-[5px] rounded-[7px] md:rounded-[11px] lg:rounded-[13px] xl:rounded-[17px] w-[88%] h-max md:ml-6 lg:ml-8 xl:mx-auto p-[5px]
     md:text-[9px] lg:text-[0.8rem] xl:text-[1rem] text-[#A3ADB2]
     relative;
   }
 
   .tab {
-    @apply text-center py-1.5 rounded-2xl w-1/3 relative overflow-hidden cursor-pointer;
+    @apply text-center py-1.5 md:rounded-[11px] lg:rounded-[13px] xl:rounded-[17px] w-1/3 relative overflow-hidden cursor-pointer;
   }
 
   .active-tab {
@@ -47,7 +47,7 @@
   width: 100%;
   height: 100%;
   padding: 6px 0;
-  border-radius: 16px;
+  border-radius: 11px;
   background: linear-gradient(90.05deg, #191919 -28.14%, #1e2123 99.96%);
   transform: translateX(-100%);
   transition: all 300ms ease-in-out;

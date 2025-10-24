@@ -1,0 +1,31 @@
+.paragraph-container::-webkit-scrollbar {
+  width: 7px;
+}
+.paragraph-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Style for the scrollbar thumb */
+.paragraph-container::-webkit-scrollbar-thumb {
+  background: linear-gradient(177.32deg, #888989 5.6%, #4a4e54 93.28%);
+  /* height: 30px; */
+  border-radius: 8px;
+  box-shadow: inset 4px 4px 4.9px rgba(0, 0, 0, 0.132);
+}
+
+/*Style for the thumb when hovered over */
+.paragraph-container::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(177.32deg, #6e6e6f 5.6%, #303030 93.28%);
+  cursor: pointer;
+}
+
+.paragraph-container p {
+  margin-bottom: 11px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+/* 
+ For Chrome, Edge, and Safari 
+.paragraph-container::-webkit-scrollbar {
+  display: none;
+} */

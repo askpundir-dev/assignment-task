@@ -1,12 +1,13 @@
 import { useState } from "react";
 import QuestionMarkIcon from "./assets/questionmark.svg?react";
+import AboutMe from "./AboutMe";
 import "./RightWidget1.css";
 
 function RightWidget1() {
   const [activeTab, setActiveTab] = useState("about-me");
 
   return (
-    <div className="widget p-2 lg:p-3 relative">
+    <div className="widget pt-2 px-2 pb-[17px] relative flex flex-col gap-4">
       <QuestionMarkIcon className="absolute top-3 left-2 lg:top-4 lg:left-3 w-4 h-auto lg:w-[22px] lg:h-auto" />
 
       <div className="tabs-container font-['Poppins', sans-serif] relative">
@@ -45,6 +46,7 @@ function RightWidget1() {
           <span>Recommended</span>
         </button>
       </div>
+      <AboutMe />
     </div>
   );
 }
