@@ -1,6 +1,8 @@
 // import { useState } from "react";
 // import reactLogo from "./assets/react.svg";
 // import viteLogo from "/vite.svg";
+import RightWidget1 from "./RightWidget1";
+import RightWidget2 from "./RightWidget2";
 import "./App.css";
 
 function App() {
@@ -11,14 +13,12 @@ function App() {
 
       {/* Right widgets container */}
       <div className="w-[43%] h-[82.3%] rounded-2xl flex flex-col items-center gap-[17px] relative top-2.5">
-        {/* Right widget-1*/}
-        <div className="widget"></div>
+        <RightWidget1 />
 
         {/* Widget separator-1 */}
         <div className="widget-separator"></div>
 
-        {/* Right widget-2*/}
-        <div className="widget"></div>
+        <RightWidget2 />
 
         {/* Widget separator-2 */}
         <div className="widget-separator"></div>
