@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@layer components {
+  .tabs-container {
+    @apply bg-[#171717] shadow-[inset_0px_4.96001px_12.4px_2.48px_rgba(0,0,0,0.25)] flex gap-[5px] rounded-[1.1rem] w-[88%] lg:mx-auto md:ml-6 p-[5px]  md:text-[9px] lg:text-[0.8rem] xl:text-[1rem] text-[#A3ADB2];
+  }
+
+  .active-tab {
+    @apply bg-[#28292F] shadow-[-8.43333px_-16.8667px_50.6px_-16.8667px_#485B71,13.4933px_16.8667px_67.4667px_8.43333px_#0A0A0A] text-white hover:cursor-default;
+  }
+
+  .tab {
+    @apply text-center py-1.5  rounded-2xl w-1/3 relative overflow-hidden cursor-pointer;
+  }
+}
+
+.tabs-container .tab::after {
+  content: "";
+  position: absolute;
+  left: -175px;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 6px 0;
+  border-radius: 16px;
+  background-color: #28292f81;
+  transition: left 300ms ease-out;
+}
+
+.tabs-container .tab:hover::after {
+  left: 0;
+}
+
+.tabs-container .tab span {
+  position: relative;
+  z-index: 10;
+  display: block;
+  border: inherit;
+  width: 100%;
+  height: 100%;
+}
