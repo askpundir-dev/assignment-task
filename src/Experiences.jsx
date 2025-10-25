@@ -1,3 +1,4 @@
+import "./Experiences.css";
 const Experiences = () => {
   return (
     <div
@@ -18,10 +19,10 @@ const Experiences = () => {
           href="https://react-portfolio-ask.netlify.app/"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-white font-semibold group"
+          className="text-gray-300 font-semibold group"
         >
           Portfolio Website
-          <span className="opacity-0 group-hover:opacity-100"> 🔗</span>
+          <span className="link-hover-styles"> 🔗</span>
         </a>
         <p>
           A modern, responsive, and interactive personal portfolio built using{" "}
@@ -29,7 +30,7 @@ const Experiences = () => {
           dark/light mode toggle, and a clean design showcasing projects and
           skills.
         </p>
-        <p className="text-xs mt-1 italic text-[#b3b3b3]">
+        <p className="tech-stack">
           Tech Stack: React • Tailwind CSS • JavaScript • Vite • Netlify
         </p>
       </div>
@@ -43,7 +44,7 @@ const Experiences = () => {
           className="text-gray-300 font-semibold group"
         >
           Amazon Frontend Clone
-          <span className="opacity-0 group-hover:opacity-100"> 🔗</span>
+          <span className="link-hover-styles"> 🔗</span>
         </a>
         <p>
           A multi-page frontend clone of Amazon built using <b>HTML</b>,{" "}
@@ -51,9 +52,7 @@ const Experiences = () => {
           navigation bar, cart interface, and order tracking — all crafted for
           responsiveness.
         </p>
-        <p className="text-xs mt-1 italic text-[#b3b3b3]">
-          Tech Stack: HTML • CSS • JavaScript
-        </p>
+        <p className="tech-stack">Tech Stack: HTML • CSS • JavaScript</p>
       </div>
 
       {/* E-commerce Clone */}
@@ -65,14 +64,14 @@ const Experiences = () => {
           className="text-gray-300 font-semibold group"
         >
           E-commerce Clone (React)
-          <span className="opacity-0 group-hover:opacity-100"> 🔗</span>
+          <span className="link-hover-styles"> 🔗</span>
         </a>
         <p>
           An interactive e-commerce frontend featuring dynamic cart management,
           order tracking, and clean UI — all powered by <b>React</b> and{" "}
           <b>Vite</b>. Focused on reusability and responsive layout design.
         </p>
-        <p className="text-xs mt-1 italic text-[#b3b3b3]">
+        <p className="tech-stack">
           Tech Stack: React • JavaScript • CSS • Vite
         </p>
       </div>
@@ -85,14 +84,14 @@ const Experiences = () => {
           rel="noopener noreferrer"
           className="text-gray-300 font-semibold group"
         >
-          Chat Bot<span className="opacity-0 group-hover:opacity-100"> 🔗</span>
+          Chat Bot <span className="link-hover-styles"> 🔗</span>
         </a>
         <p>
           A simple yet interactive chatbot built with <b>React.js</b> that
           delivers a smooth, conversational experience with a responsive design
           and dynamic responses.
         </p>
-        <p className="text-xs mt-1 italic text-[#b3b3b3]">
+        <p className="tech-stack">
           Tech Stack: React • CSS • JavaScript • Vite
         </p>
       </div>

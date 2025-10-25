@@ -23,7 +23,7 @@
 
 @layer components {
   .widget {
-    @apply w-full h-[47%] bg-[#363C43] rounded-[19px] shadow-[5.67px_5.67px_3.78px_rgba(0,0,0,0.4)];
+    @apply w-full h-[47%] 2xl:h-[46.5%] bg-[#363C43] rounded-[19px] shadow-[5.67px_5.67px_3.78px_rgba(0,0,0,0.4)] shrink-0;
   }
 
   .widget-separator {
@@ -40,4 +40,3 @@
       );
   }
 }
-

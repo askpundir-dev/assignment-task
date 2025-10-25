@@ -12,7 +12,7 @@ function App() {
       <div className="border-[#96bee7] border w-[50%] h-[80%] rounded-[27px] bg-[#616161d1]"></div>
 
       {/* Right widgets container */}
-      <div className="w-[43%] h-[82.3%] rounded-2xl flex flex-col items-center gap-[17px] relative top-2.5">
+      <div className="w-[43%] h-[80%] rounded-2xl flex flex-col items-center justify-between relative">
         <RightWidget1 />
 
         {/* Widget separator-1 */}
@@ -21,7 +21,7 @@ function App() {
         <RightWidget2 />
 
         {/* Widget separator-2 */}
-        <div className="widget-separator"></div>
+        <div className="widget-separator absolute -bottom-6 left-1/2 -translate-x-1/2"></div>
       </div>
     </>
   );
