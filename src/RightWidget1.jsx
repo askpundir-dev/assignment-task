@@ -1,6 +1,8 @@
 import { useState } from "react";
 import QuestionMarkIcon from "./assets/questionmark.svg?react";
 import AboutMe from "./AboutMe";
+import Experiences from "./Experiences";
+import Recommended from "./Recommended";
 import "./RightWidget1.css";
 
 function RightWidget1() {
@@ -46,7 +48,21 @@ function RightWidget1() {
           <span>Recommended</span>
         </button>
       </div>
-      <AboutMe />
+      <div className="layout-icon absolute top-1/2 -translate-y-1/2">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      {activeTab === "about-me" ? (
+        <AboutMe />
+      ) : activeTab === "experiences" ? (
+        <Experiences />
+      ) : (
+        <Recommended />
+      )}
     </div>
   );
 }

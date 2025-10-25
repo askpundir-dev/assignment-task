@@ -10,7 +10,7 @@
   }
 
   .tab {
-    @apply text-center py-1.5 md:rounded-[11px] lg:rounded-[13px] xl:rounded-[17px] w-1/3 relative overflow-hidden cursor-pointer;
+    @apply text-center py-1.5 md:rounded-[11px] lg:rounded-[13px] xl:rounded-[15px] w-1/3 relative overflow-hidden cursor-pointer;
   }
 
   .active-tab {
@@ -28,7 +28,6 @@
   left: 7px;
   width: calc(33.333% - 5px);
   height: calc(100% - 10px);
-  border-radius: 1rem;
   background: #28292f;
   box-shadow: -8.43px -16.86px 50.6px -16.86px #485b71,
     13.49px 16.86px 67.46px 8.43px #0a0a0a;
@@ -47,7 +46,6 @@
   width: 100%;
   height: 100%;
   padding: 6px 0;
-  border-radius: 11px;
   background: linear-gradient(90.05deg, #191919 -28.14%, #1e2123 99.96%);
   transform: translateX(-100%);
   transition: all 300ms ease-in-out;
@@ -65,4 +63,40 @@
   display: block;
   width: 100%;
   height: 100%;
+}
+
+@media (max-width: 1024px) {
+  .active-indicator,
+  .tabs-container .tab:not(.active-tab)::after {
+    border-radius: 11px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .active-indicator,
+  .tabs-container .tab:not(.active-tab)::after {
+    border-radius: 13px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .active-indicator,
+  .tabs-container .tab:not(.active-tab)::after {
+    border-radius: 15px;
+  }
+}
+
+.layout-icon {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.8px;
+  margin-left: 3px;
+  /* color: aliceblue; */
+}
+
+.layout-icon div {
+  width: 8px;
+  height: 8px;
+  background: #4a4e54;
+  border-radius: 1.16px;
 }
