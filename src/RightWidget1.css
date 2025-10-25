@@ -36,7 +36,7 @@
   pointer-events: none;
 }
 
-/* applies the hover effect only when tab does not have active-tab class */
+/* applies the ::after only when tab does not have active-tab class */
 .tabs-container .tab:not(.active-tab)::after {
   content: "";
   position: absolute;
