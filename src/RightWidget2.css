@@ -13,36 +13,35 @@
   .add-image {
     @apply py-2 text-center text-[0.5rem] xl:text-[12px] md:rounded-[20px] lg:rounded-[15px] xl:rounded-[17px] relative cursor-pointer w-full;
   }
+  .gallery-navigation-btns {
+    @apply p-0.5 xl:p-1.5 2xl:p-[7px] w-fit h-fit text-gray-500 bg-[linear-gradient(139.14deg,#303439_12.4%,#161718_94.96%)] 
+  shadow-[-5px_-3px_30px_-10px_#96bee7,4px_5px_30px_5px_#101213];
+  }
 }
 
-/* .widget2-tabs-container .gallery {
-  background-color: ;
-} */
+.widget2-tabs-container .gallery {
+  font-family: "Poppins", sans-serif;
+}
 
 .widget2-tabs-container .add-image {
-  background: rgba(255, 255, 255, 0.03);
+  background: #ffffff08;
   box-shadow: -0.5px -0.5px 6.9px rgba(255, 255, 255, 0.25),
     9px 10px 7.1px rgba(0, 0, 0, 0.4),
     inset 0px 0px 48.9064px rgba(255, 255, 255, 0.05),
     inset 0px 3.26043px 3.26043px rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(52.28px);
-  /* border-radius: 104px; */
-}
-
-.gallery {
-  font-family: "Poppins", sans-serif;
-}
-.add-image {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 500;
-  /* width: clamp(23%, 60px, 28%); */
 }
 
-.gallery-navigation-btns {
+/* .gallery-navigation-btns {
   background: linear-gradient(139.14deg, #303439 12.4%, #161718 94.96%);
-  box-shadow: -5px -3px 30px -10px #96bee7, 4px 5px 30px 5px #101213;
-  color: gray;
-  width: fit-content;
-  height: fit-content;
-  padding: 8px;
-}
+  box-shadow: -5px -3px 30px -10px #96bee7, 4px 5px 30px 5px #101213
+  
+} */
+/* 
+
+
+background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+  url(.jpg);
+border-radius: 24px; */
