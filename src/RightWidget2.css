@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@layer components {
+  .widget2-tabs-container {
+    @apply flex justify-between rounded-[7px] md:rounded-[11px] lg:rounded-[13px] xl:rounded-[17px] w-[88%] h-max md:ml-6 lg:ml-8 xl:mx-auto p-[3px]
+    md:text-[9px] lg:text-[0.8rem] xl:text-[1rem] text-white
+    relative;
+  }
+
+  .gallery {
+    @apply text-center py-[0.8rem] md:rounded-[11px] lg:rounded-[13px] xl:rounded-[15px] w-[25%] relative bg-[#171717] font-medium overflow-hidden self-center;
+  }
+  .add-image {
+    @apply py-2 text-center text-[0.5rem] xl:text-[12px] md:rounded-[20px] lg:rounded-[15px] xl:rounded-[17px] relative cursor-pointer w-full;
+  }
+}
+
+/* .widget2-tabs-container .gallery {
+  background-color: ;
+} */
+
+.widget2-tabs-container .add-image {
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow: -0.5px -0.5px 6.9px rgba(255, 255, 255, 0.25),
+    9px 10px 7.1px rgba(0, 0, 0, 0.4),
+    inset 0px 0px 48.9064px rgba(255, 255, 255, 0.05),
+    inset 0px 3.26043px 3.26043px rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(52.28px);
+  /* border-radius: 104px; */
+}
+
+.gallery {
+  font-family: "Poppins", sans-serif;
+}
+.add-image {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 500;
+  /* width: clamp(23%, 60px, 28%); */
+}
+
+.gallery-navigation-btns {
+  background: linear-gradient(139.14deg, #303439 12.4%, #161718 94.96%);
+  box-shadow: -5px -3px 30px -10px #96bee7, 4px 5px 30px 5px #101213;
+  color: gray;
+  width: fit-content;
+  height: fit-content;
+  padding: 8px;
+}

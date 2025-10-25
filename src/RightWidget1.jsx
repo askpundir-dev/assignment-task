@@ -1,5 +1,6 @@
 import { useState } from "react";
 import QuestionMarkIcon from "./assets/questionmark.svg?react";
+import GridLayoutIcon from "./GridLayoutIcon";
 import AboutMe from "./AboutMe";
 import Experiences from "./Experiences";
 import Recommended from "./Recommended";
@@ -48,14 +49,7 @@ function RightWidget1() {
           <span>Recommended</span>
         </button>
       </div>
-      <div className="layout-icon absolute top-1/2 -translate-y-1/2">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
+      <GridLayoutIcon />
       {activeTab === "about-me" ? (
         <AboutMe />
       ) : activeTab === "experiences" ? (
