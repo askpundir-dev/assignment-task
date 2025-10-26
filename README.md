@@ -10,17 +10,23 @@ This project is my submission for the internship assignment, where the goal was 
 
 ---
 
-## 📌 Assignment Overview
+## 📌 Assignment Instructions
 
-- Duplicate the Figma prototype (Assignment file) and use it as reference.
-- Build the UI using **React** (or Next.js).
-- Use any UI or styling library (Tailwind CSS in this case).
-- Focus on two widgets on the right-hand side:
-  - **Widget 1:** Three clickable tabs – "About Me", "Experiences", "Recommended".
-  - **Widget 2 (Gallery):** Ability to add images dynamically via the **+ Add Image** button.
-- Left half of the screen remains empty but responsive for laptops (above 768px width).
-- Replicate all **interactions, padding, margins, shadows, and hover effects**.
-- Ensure widgets are aligned properly and the layout is responsive.
+1. Make a duplicate of this Figma by clicking on the drop-down next to the name ‘Assignment’ (visible on the top left side of the screen). Then you can use your local file.
+2. Create a new GitHub repository for the assignment. Build the assignment using **React** or **Next.js**.
+3. You may use any styling or UI library, such as Tailwind CSS, shadcn, Chakra UI, or Material UI.
+4. Keep the left half of the screen empty (but it should be responsive for laptop, not mobile).
+5. Focus on the two widgets on the right-hand side.
+6. The first widget has three tabs: "About Me", "Experiences" & "Recommended", these should be clickable.
+7. In the gallery widget more photos can be added by clicking the **+ Add Image** button.
+8. All the components should be responsive (for laptop screens; everything above 768px width).
+9. Replicate the exact UI; with exact padding, margins, shadows, interactions (if any).
+10. Ensure that the two widgets are accurately aligned with each other (relative right, left padding).
+11. Submit the following:
+    - Live Assignment Link – Host the assignment on any platform (e.g., Vercel, Netlify, Render, etc.) and share the live URL.
+    - Public GitHub Repository Link – Provide the link to your public GitHub repository containing the assignment code.
+
+**NOTE:** Recreate all interactions and effects visible in the prototype preview (accessible by clicking the Play button at the top right in Figma).
 
 ---
 
@@ -33,7 +39,7 @@ This project is my submission for the internship assignment, where the goal was 
 
 ---
 
-## 📸 Screenshot
+## 📸 Screenshots
 
 ### Assignment Screenshot
 
@@ -41,6 +47,4 @@ This project is my submission for the internship assignment, where the goal was 
 
 ### Project Screenshot
 
-## ![Project Screenshot](./screenshot/project-ss.png)
-
----
+![Project Screenshot](./screenshot/project-ss.png)
