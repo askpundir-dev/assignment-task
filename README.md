@@ -6,7 +6,7 @@ This project is my submission for the internship assignment, where the goal was 
 
 ## 🖥️ Live Demo
 
-🔗 [Live Assignment Link](internasssignment.netlify.app)
+🔗 [Live Assignment Link](https://internasssignment.netlify.app)
 
 ---
 
