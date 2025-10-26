@@ -112,6 +112,10 @@
     padding-bottom: 1px;
   }
 }
+.carousel::scroll-button(right):hover,
+.carousel::scroll-button(left):hover {
+  background: rgba(0, 0, 0, 0.64);
+}
 
 .carousel::scroll-button(right):disabled,
 .carousel::scroll-button(left):disabled {

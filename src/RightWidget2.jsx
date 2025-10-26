@@ -20,8 +20,12 @@ export default function RightWidget2() {
       alt: "rose bouquet",
     },
     {
-      src: "roses.avif",
-      alt: "rose bouquet",
+      src: "black-bonut-metallic-blue-headlight-view-nissan-gtr-car.avif",
+      alt: "nissan gtr metallic blue color",
+    },
+    {
+      src: "bmw-bike.avif",
+      alt: "bmw bike white",
     },
   ]);
 
