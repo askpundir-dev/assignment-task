@@ -50,6 +50,7 @@
   overflow-x: auto;
   scroll-behavior: smooth;
   border-radius: 24px;
+  /* scroll-snap-type: x mandatory; */
 }
 .carousel::-webkit-scrollbar {
   display: none;
@@ -119,7 +120,8 @@
 }
 
 .card {
-  flex: 0 0 31%;
+  /* scroll-snap-align:start; */
+  flex: 0 0 31.5%;
   height: 100%;
   border-radius: 24px;
   text-align: center;
@@ -128,6 +130,12 @@
 }
 @media (max-width: 1024px) {
   .card {
-    flex: 0 0 43%;
+    flex: 0 0 50%;
+  }
+}
+
+@media (min-width: 1724px) {
+  .card {
+    flex: 0 0 32%;
   }
 }
