@@ -1,18 +1,40 @@
-# React + Vite
+# Internship Assignment – React Widgets UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is my submission for the internship assignment, where the goal was to replicate a Figma prototype using **React**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🖥️ Live Demo
 
-## React Compiler
+🔗 [Live Assignment Link](YOUR_LIVE_LINK_HERE)
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+---
 
-Note: This will impact Vite dev & build performances.
+## 📌 Assignment Overview
 
-## Expanding the ESLint configuration
+- Duplicate the Figma prototype (Assignment file) and use it as reference.
+- Build the UI using **React** (or Next.js).
+- Use any UI or styling library (Tailwind CSS in this case).
+- Focus on two widgets on the right-hand side:
+  - **Widget 1:** Three clickable tabs – "About Me", "Experiences", "Recommended".
+  - **Widget 2 (Gallery):** Ability to add images dynamically via the **+ Add Image** button.
+- Left half of the screen remains empty but responsive for laptops (above 768px width).
+- Replicate all **interactions, padding, margins, shadows, and hover effects**.
+- Ensure widgets are aligned properly and the layout is responsive.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+- **React.js** – Component-based UI.
+- **Tailwind CSS** – Styling and responsive design.
+- **Vite** – Development environment.
+- **Netlify / Vercel** – Live deployment.
+
+---
+
+## 📸 Screenshot
+
+![Assignment Screenshot](./screenshot//assignment-ss.png)
+
+---
