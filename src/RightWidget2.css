@@ -132,7 +132,7 @@
   align-content: center;
   /* border: 2px solid white; */
 }
-@media (max-width: 1024px) {
+@media (max-width: 900px) {
   .card {
     flex: 0 0 50%;
   }
