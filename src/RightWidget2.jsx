@@ -36,7 +36,7 @@ export default function RightWidget2() {
   };
 
   return (
-    <div className="widget pt-2 px-2 pb-[17px] relative flex flex-col gap-4 overflow-hidden">
+    <div className="widget pt-2 px-2 relative flex flex-col gap-1 overflow-hidden">
       <QuestionMarkIcon className="absolute top-3 left-2 lg:top-4 lg:left-3 w-4 h-auto lg:w-[22px] lg:h-auto" />
 
       <div className="widget2-tabs-container relative">
@@ -58,10 +58,10 @@ export default function RightWidget2() {
             ></input>
           </div>
           <div className="button-container flex w-1/2  justify-center gap-2 xl:gap-3">
-            <button className="gallery-navigation-btns rounded-full">
+            <button className="gallery-navigation-btns rounded-full opacity-0">
               <PreviousImageIcon />
             </button>
-            <button className="gallery-navigation-btns rounded-full">
+            <button className="gallery-navigation-btns rounded-full opacity-0">
               <NextImageIcon />
             </button>
           </div>
@@ -69,7 +69,8 @@ export default function RightWidget2() {
       </div>
 
       <GridLayoutIcon />
-      <div className="image-flex-container flex w-[90%] h-[70%] justify-center items-end ml-7 2xl:mx-auto gap-2  2xl:gap-3 flex-1">
+      {/* <div className="space-maker opacity-0">hidden</div> */}
+      <div className="carousel">
         {images.length > 0 &&
           images.map((img, index) => (
             <ImageCard key={index} src={img.src} alt={img.alt} />

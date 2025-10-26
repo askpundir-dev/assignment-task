@@ -19,6 +19,10 @@
   }
 }
 
+.widget2-tabs-container {
+  anchor-name: --tabs;
+}
+
 .widget2-tabs-container .gallery {
   font-family: "Poppins", sans-serif;
 }
@@ -34,14 +38,96 @@
   font-weight: 500;
 }
 
-/* .gallery-navigation-btns {
+.carousel {
+  display: flex;
+  gap: 1em;
+  /* border: 2px solid white; */
+  margin-left: 1.2em;
+  height: 80%;
+  padding: 1em 0.8em 0.7em;
+  /* padding: 1rem 0.9rem 3px; */
+  width: 95%;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  border-radius: 24px;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel::scroll-button(right),
+.carousel::scroll-button(left) {
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
   background: linear-gradient(139.14deg, #303439 12.4%, #161718 94.96%);
-  box-shadow: -5px -3px 30px -10px #96bee7, 4px 5px 30px 5px #101213
-  
-} */
-/* 
+  box-shadow: -5px -3px 30px -10px #96bee7, 4px 5px 30px 5px #101213;
+  padding: 0 7px;
+  padding-top: 5px;
+  padding-bottom: 4px;
+  position: absolute;
+  position-anchor: --tabs;
+  position-area: right;
+}
+.carousel::scroll-button(right) {
+  content: url(./assets/next-image-icon.svg);
+  transform: translateX(-100%);
+  /* right: calc(10% - 1px); */
+}
+.carousel::scroll-button(left) {
+  content: url(./assets/previous-image-icon.svg);
+  transform: translateX(-250%);
+  /* right: calc(18% - 1px); */
+}
 
+@media (max-width: 1275px) {
+  .carousel::scroll-button(right) {
+    transform: translateX(-100%);
+  }
+  .carousel::scroll-button(left) {
+    transform: translateX(-225%);
+  }
 
-background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-  url(.jpg);
-border-radius: 24px; */
+  .carousel::scroll-button(right),
+  .carousel::scroll-button(left) {
+    padding: 0 3px;
+    padding-top: 2px;
+    padding-bottom: 1px;
+  }
+}
+
+@media (min-width: 2000px) {
+  .carousel::scroll-button(right) {
+    transform: translateX(-250%);
+  }
+  .carousel::scroll-button(left) {
+    transform: translateX(-385%);
+  }
+
+  .carousel::scroll-button(right),
+  .carousel::scroll-button(left) {
+    padding: 0 3px;
+    padding-top: 2px;
+    padding-bottom: 1px;
+  }
+}
+
+.carousel::scroll-button(right):disabled,
+.carousel::scroll-button(left):disabled {
+  cursor: auto;
+  opacity: 0.6;
+}
+
+.card {
+  flex: 0 0 31%;
+  height: 100%;
+  border-radius: 24px;
+  text-align: center;
+  align-content: center;
+  /* border: 2px solid white; */
+}
+@media (max-width: 1024px) {
+  .card {
+    flex: 0 0 43%;
+  }
+}
