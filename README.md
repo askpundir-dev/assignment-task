@@ -35,6 +35,8 @@ This project is my submission for the internship assignment, where the goal was 
 
 ## 📸 Screenshot
 
+# Assignment Screenshot
+
 ![Assignment Screenshot](./screenshot//assignment-ss.png)
 
 ---
