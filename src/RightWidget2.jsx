@@ -62,6 +62,7 @@ export default function RightWidget2() {
             ></input>
           </div>
           <div className="button-container flex w-1/2  justify-center gap-2 xl:gap-3">
+            {/*These buttons are hidden because I created them before implementing the carousel functionality. I am using buttons directly from css for navigation */}
             <button className="gallery-navigation-btns rounded-full opacity-0">
               <PreviousImageIcon />
             </button>

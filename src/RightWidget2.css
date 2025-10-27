@@ -61,23 +61,27 @@
   border: none;
   cursor: pointer;
   border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  padding: 0;
+  padding-top: 3px;
   background: linear-gradient(139.14deg, #303439 12.4%, #161718 94.96%);
   box-shadow: -5px -3px 30px -10px #96bee7, 4px 5px 30px 5px #101213;
-  padding: 0 7px;
-  padding-top: 5px;
-  padding-bottom: 4px;
+  /* padding: 0 7px; */
+  /* padding-top: 5px; */
+  /* padding-bottom: 4px; */
   position: absolute;
   position-anchor: --tabs;
   position-area: right;
 }
 .carousel::scroll-button(right) {
   content: url(./assets/next-image-icon.svg);
-  transform: translateX(-100%);
+  transform: translateX(-150%);
   /* right: calc(10% - 1px); */
 }
 .carousel::scroll-button(left) {
   content: url(./assets/previous-image-icon.svg);
-  transform: translateX(-250%);
+  transform: translateX(-280%);
   /* right: calc(18% - 1px); */
 }
 
@@ -91,9 +95,8 @@
 
   .carousel::scroll-button(right),
   .carousel::scroll-button(left) {
-    padding: 0 3px;
-    padding-top: 2px;
-    padding-bottom: 1px;
+    width: 28px;
+    height: 28px;
   }
 }
 
@@ -103,13 +106,6 @@
   }
   .carousel::scroll-button(left) {
     transform: translateX(-385%);
-  }
-
-  .carousel::scroll-button(right),
-  .carousel::scroll-button(left) {
-    padding: 0 3px;
-    padding-top: 2px;
-    padding-bottom: 1px;
   }
 }
 .carousel::scroll-button(right):hover,
