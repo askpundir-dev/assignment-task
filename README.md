@@ -26,7 +26,6 @@ This project is my submission for the internship assignment, where the goal was 
     - Live Assignment Link – Host the assignment on any platform (e.g., Vercel, Netlify, Render, etc.) and share the live URL.
     - Public GitHub Repository Link – Provide the link to your public GitHub repository containing the assignment code.
 
-**NOTE:** Recreate all interactions and effects visible in the prototype preview (accessible by clicking the Play button at the top right in Figma).
 
 ---
 
